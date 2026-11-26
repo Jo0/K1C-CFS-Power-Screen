@@ -5,6 +5,8 @@ on:
   # nightly with .github/workflows/promote.yml.
   push:
     branches: [ "develop", "main" ]
+  # Lets a nightly be built and published on demand from main.
+  workflow_dispatch:
 
 permissions:
   contents: read
